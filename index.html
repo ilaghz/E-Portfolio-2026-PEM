@@ -69,7 +69,7 @@
                     <div class="project-info">
                         <h3>Stratégie digitale — Ca'Zen</h3>
                         <p>Projet académique visant à développer la visibilité digitale d'une entreprise de rénovation intérieure. Création d'une stratégie réseaux sociaux, d'un site web optimisé SEO et d'un parcours client digital.</p>
-                        <a href="https://res.cloudinary.com/dk3gvyanp/image/upload/v1776427782/Copie_de_Presentation_orale_CA_ZEN_gwhrxj.jpg" target="_blank" rel="noopener noreferrer" class="project-button">Voir le projet</a>
+                        <button onclick="openModal('caZenModal')" class="project-button" style="width: fit-content; margin-top: auto;">Voir le projet</button>
                     </div>
                 </div>
                 <!-- Projet 2 -->
@@ -77,7 +77,7 @@
                     <div class="project-info">
                         <h3>Stratégie de développement — InfoPilote & FFA</h3>
                         <p>Projet stratégique visant à améliorer l'engagement des abonnés et la fidélisation via des parcours personnalisés, du contenu premium et des campagnes marketing ciblées.</p>
-                        <a href="https://res.cloudinary.com/dk3gvyanp/image/upload/v1776427618/Light_Proposition_de_Strate%CC%81gie_et_Plan_d_Action_pour_InfoPilote_et_la_FFA_psikap.jpg" target="_blank" rel="noopener noreferrer" class="project-button">Voir le projet</a>
+                        <button onclick="openModal('infoPiloteModal')" class="project-button" style="width: fit-content; margin-top: auto;">Voir le projet</button>
                     </div>
                 </div>
                 <!-- Projet 3 -->
@@ -85,7 +85,15 @@
                     <div class="project-info">
                         <h3>Stratégie de communication — Association SKIN</h3>
                         <p>Projet de stratégie digitale pour une association accompagnant les personnes en rémission du cancer grâce à l'art. Objectif : améliorer la visibilité, recruter des artistes bénévoles et développer les partenariats.</p>
-                        <a href="https://res.cloudinary.com/dk3gvyanp/image/upload/v1776427747/PRESENTATION_SKIN_sfixxt.jpg" target="_blank" rel="noopener noreferrer" class="project-button">Voir le projet</a>
+                        <button onclick="openModal('skinModal')" class="project-button" style="width: fit-content; margin-top: auto;">Voir le projet</button>
+                    </div>
+                </div>
+                <!-- Projet 4 - Analyse de données -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Analyse de données — Streaming musical</h3>
+                        <p>Analyse de données basée sur Spotify, YouTube et les réseaux sociaux afin de comprendre comment les données influencent la création, la recommandation et la visibilité des contenus.</p>
+                        <button onclick="openModal('dataProjectModal')" class="project-button" style="width: fit-content; margin-top: auto;">Voir le projet</button>
                     </div>
                 </div>
             </div>
@@ -248,7 +256,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Pied de page -->
     <footer>
         <div class="container">
             <p>© 2026 — Portfolio Ines Laghzou. Tous droits réservés.</p>
@@ -262,6 +270,90 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modale Projet Ca'Zen -->
+    <div id="caZenModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('caZenModal')">&times;</span>
+            <h2 style="margin-bottom: 20px;">Stratégie digitale — Ca'Zen</h2>
+            <div style="text-align: left;">
+                <p>Développement de la visibilité digitale d'une entreprise de rénovation intérieure. Ce projet inclut une stratégie complète sur les réseaux sociaux, l'optimisation SEO du site web et la conception d'un parcours client fluide.</p>
+                <img src="https://res.cloudinary.com/dk3gvyanp/image/upload/v1776427782/Copie_de_Presentation_orale_CA_ZEN_gwhrxj.jpg" alt="Présentation Ca'Zen" style="width: 100%; border-radius: 10px; margin-top: 20px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modale Projet InfoPilote -->
+    <div id="infoPiloteModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('infoPiloteModal')">&times;</span>
+            <h2 style="margin-bottom: 20px;">Stratégie de développement — InfoPilote & FFA</h2>
+            <div style="text-align: left;">
+                <p>Analyse stratégique pour la Fédération Française d'Aéronautique visant à booster l'engagement des abonnés. Mise en place de parcours personnalisés, création de contenu premium et déploiement de campagnes marketing ciblées.</p>
+                <img src="https://res.cloudinary.com/dk3gvyanp/image/upload/v1776427618/Light_Proposition_de_Strate%CC%81gie_et_Plan_d_Action_pour_InfoPilote_et_la_FFA_psikap.jpg" alt="Présentation InfoPilote" style="width: 100%; border-radius: 10px; margin-top: 20px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modale Projet SKIN -->
+    <div id="skinModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('skinModal')">&times;</span>
+            <h2 style="margin-bottom: 20px;">Stratégie de communication — Association SKIN</h2>
+            <div style="text-align: left;">
+                <p>Stratégie digitale pour une association d'aide aux personnes en rémission du cancer. Focus sur le recrutement de bénévoles, le développement de partenariats artistiques et l'amélioration de la notoriété globale via les canaux digitaux.</p>
+                <img src="https://res.cloudinary.com/dk3gvyanp/image/upload/v1776427747/PRESENTATION_SKIN_sfixxt.jpg" alt="Présentation SKIN" style="width: 100%; border-radius: 10px; margin-top: 20px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Fenêtre Modale Projet Data -->
+    <div id="dataProjectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('dataProjectModal')">&times;</span>
+            <h2 style="margin-bottom: 20px;">Projet Data — Influence des données sur la création musicale</h2>
+            
+            <div style="text-align: left;">
+                <h3 style="color: #cb818a; margin: 20px 0 10px;">Fiche de cadrage</h3>
+                <p><strong>Problématique :</strong> Comment les données d’écoute influencent-elles la création, la recommandation et la personnalisation musicale ?</p>
+                <p><strong>Hypothèse :</strong> Les données poussent les créateurs à produire des contenus adaptés aux algorithmes.</p>
+
+                <h3 style="color: #cb818a; margin: 30px 0 10px;">Analyse 1 — Popularité par genre</h3>
+                <img src="analyse-spotify.png" alt="Analyse Spotify" style="width: 100%; border-radius: 10px; margin: 15px 0;">
+                <p>Ce graphique montre que certains genres musicaux sont plus populaires que d’autres. Les plateformes peuvent donc influencer la création musicale en mettant en avant certains styles.</p>
+
+                <h3 style="color: #cb818a; margin: 30px 0 10px;">Analyse 2 — Relation vues / likes</h3>
+                <div class="chart-placeholder">Graphique YouTube</div>
+                <p>Ce graphique montre que les contenus les plus visibles génèrent plus d’engagement, ce qui montre l’importance des algorithmes dans la recommandation.</p>
+
+                <h3 style="color: #cb818a; margin: 30px 0 10px;">Analyse 3 — Engagement par plateforme</h3>
+                <div class="chart-placeholder">Graphique Social</div>
+                <p>Ce graphique montre que certaines plateformes génèrent plus d’engagement que d’autres. Les créateurs adaptent donc leurs contenus selon les performances.</p>
+
+                <h3 style="color: #cb818a; margin: 30px 0 10px;">Conclusion</h3>
+                <p>Ces analyses montrent que les données influencent fortement la création et la visibilité des contenus. Cela peut conduire à une standardisation des productions.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+    </script>
 
   </body>
 </html>
