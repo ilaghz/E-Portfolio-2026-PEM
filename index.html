@@ -223,8 +223,8 @@
                     </div>
                 </div>
             </div>
-            <div class="cv-display" style="text-align: center; margin-top: 30px;">
-                <img src="https://res.cloudinary.com/dk3gvyanp/image/upload/v1778157085/INES_LAGHZOU_CV_2026_xlgh3m.png" alt="CV Ines Laghzou" style="width: 100%; max-width: 800px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 1px solid #eee;">
+            <div style="text-align: center; margin-top: 40px;">
+                <button onclick="openModal('cvModal')" class="btn">Voir mon CV</button>
             </div>
         </div>
     </section>
@@ -599,6 +599,20 @@
                         <span style="font-size: 2rem;">🚀</span>
                     </div>
                     <a href="https://iaact-guardians.lovable.app" target="_blank" rel="noopener noreferrer" class="project-button" style="margin: 0; width: fit-content;">Consulter le projet Lovable</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modale CV -->
+    <div id="cvModal" class="modal">
+        <div class="modal-content" style="max-width: 850px;">
+            <span class="close" onclick="closeModal('cvModal')">&times;</span>
+            <h2 style="margin-bottom: 20px; color: #cb818a; text-align: center;">Curriculum Vitae</h2>
+            <div style="text-align: center;">
+                <img src="https://res.cloudinary.com/dk3gvyanp/image/upload/v1778157085/INES_LAGHZOU_CV_2026_xlgh3m.png" alt="CV Ines Laghzou" style="width: 100%; max-width: 800px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border: 1px solid #eee;">
+                <div style="margin-top: 30px;">
+                    <a href="https://res.cloudinary.com/dk3gvyanp/image/upload/fl_attachment:CV-Ines-Laghzou/v1778157085/INES_LAGHZOU_CV_2026_xlgh3m.png" download="CV-Ines-Laghzou.pdf" class="btn">Télécharger le CV</a>
                 </div>
             </div>
         </div>
